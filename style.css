@@ -3,12 +3,30 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* multiple same command styles */
+.section-small-title {
+    color: #757575; 
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    color: #070211; 
+    font-family: Inter;
+    font-size: 45px; 
+    font-weight: 700; 
+    margin-bottom: 25px;
+}
+
 /* heading & main-banner style */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 130px 117px;
+    margin: 40px 130px 110px;
 }
 
 .main-banner {
@@ -29,13 +47,44 @@ header {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    
+    margin-bottom: 15px;
+
 }
 
 .main-banner h1 {
     color: #FFF;
     text-align: center;
-    font-size: 72px;  
+    font-size: 70px;
     font-weight: 900;
-    line-height: 95px;
+    line-height: 90px;
+}
+
+/* main & discount-sec  styles */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-sec h1 {
+    color: #FD6E0A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.discount-sec img{
+    width: 800px;
+    height: 500px;
+    margin-top: 27px;
+    margin-bottom: 1150px;
 }
