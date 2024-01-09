@@ -42,6 +42,9 @@ body {
     border-radius: 8px;
     background-color: #FD6E0A;
     border: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -111,7 +114,7 @@ main {
     width: 800px;
     height: 500px;
     margin-top: 27px;
-    margin-bottom: 1150px;
+    margin-bottom: 150px;
 }
 
 /* party-section styles */
@@ -127,11 +130,12 @@ main {
     justify-content: center;
     align-items: center;
     background-position: center;
-    margin: -800px auto 110px;
+    margin: 0px auto 110px;
 }
 
 .party-sec div {
     width: 50%;
+    
 }
 
 .party-sec h1 {
@@ -148,6 +152,7 @@ main {
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 20px;
+
 }
 
 /* new year party loation */
@@ -162,19 +167,21 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: rgba(236, 166, 70, 0.10);
+    background-color: rgba(68, 65, 60, 0.1);;
     margin: 0 130px 110px;
 }
 
 .new-park-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 100px 0px;
+    text-align: left;
 }
 
 .new-park-container p {
-    text-align: center;
+    text-align: left;
     font-size: 32px;
     font-weight: 600;
     line-height: 36px;
@@ -194,14 +201,11 @@ main {
 /* best-offer section styles */
 
 .best-offer {
-    display: grid;
-    /* need to understand */
-    grid-template-columns: repeat(3, 1fr);
-    /* need to understand */
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);   
     align-items: center;
     gap: 50px;
-    margin: 0px auto 110px;
-    /* need to understand about margin */
+    margin: 0px auto 110px;  
     padding: 0 130px;
     width: 1230px;
 }
@@ -221,8 +225,8 @@ main {
     padding: 40px;
 }
 
-.text-bold-primary {
-    color: black;
+.text-primary {
+    color: #FD6E0A;
     font-family: Inter;
     font-size: 45px;
     font-weight: 700;
@@ -242,29 +246,23 @@ main {
     margin-bottom: 22px;
 }
 
-.img-container {
-    /* need to understand */
-    height: 450px;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 5px solid #eca74600;
-}
-
-.img-container img {
-    /* need to understand */
-    transition: transform .5s ease;
-}
-
-.img-container img:hover {
-    /* need to understand */
-    transform: scale(1.5);
-}
-
 .img-container:hover {
-    /* need to understand */
+    
     border: 5px solid #ECA646;
     border-radius: 20px;
 }
+.brighten img {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+    
+    .brighten img:hover {
+    -webkit-filter: brightness(100%);
+    }
 
 /* newsletter section styles */
 .newsletter-section {
@@ -275,7 +273,7 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: rgba(236, 166, 70, 0.10);
+    background-color: rgba(68, 65, 60, 0.1);
     margin: 0 130px 110px;
 }
 
@@ -300,7 +298,7 @@ main {
     font-size: 16px;
 }
 
-.newsletter-section input[type="email"]:focus {
+.newsletter-section input[type="email"]:hover {
     outline: 2px solid #FD6E0A;
     border: 0px;
 }
@@ -349,8 +347,10 @@ footer {
   .footer-contacts {
     display: flex;
     gap: 15px;
+    text-decoration: none;
     justify-content: start;
     align-items: center;
+    
   }
   
   footer hr {
