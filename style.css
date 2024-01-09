@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 /* multiple same command styles */
@@ -28,8 +28,8 @@ body {
     line-height: 30px;
     width: 50%;
     margin-bottom: 45px;
-  }
-  
+}
+
 
 .btn-primary {
     color: #FFF;
@@ -153,8 +153,17 @@ main {
 /* new year party loation */
 
 .new-park {
-    padding: 100px 0px;
+    padding: 50px 0px;
     margin: auto;
+    width: 1320px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(236, 166, 70, 0.10);
+    margin: 0 130px 110px;
 }
 
 .new-park-container {
@@ -185,68 +194,129 @@ main {
 /* best-offer section styles */
 
 .best-offer {
-    display: grid;     /* need to understand */
-    grid-template-columns: repeat(3, 1fr);  /* need to understand */
+    display: grid;
+    /* need to understand */
+    grid-template-columns: repeat(3, 1fr);
+    /* need to understand */
     align-items: center;
     gap: 50px;
-    margin: 0px auto 110px;       /* need to understand about margin */
+    margin: 0px auto 110px;
+    /* need to understand about margin */
     padding: 0 130px;
     width: 1230px;
-  }
-  
-  .offer-description {
+}
+
+.offer-description {
     color: rgba(7, 2, 17, 0.60);
     font-family: Inter;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 45px;
-  }
-  
-  .circular-image {
+}
+
+.circular-image {
     width: 340px;
     border-radius: 50%;
     border: 14px solid #ECA646;
     padding: 40px;
-  }
-  
-  .text-bold-primary {
+}
+
+.text-bold-primary {
     color: black;
     font-family: Inter;
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 15px;
-  }
+}
 
-  /* portfolio styles */
+/* portfolio styles */
 
-  .portfolio-section {
+.portfolio-section {
     margin-bottom: 110px;
     width: 1230px;
-  }
-  
-  .portfolio-column {
+}
+
+.portfolio-column {
     display: flex;
     gap: 22px;
     margin-bottom: 22px;
-  }
-  
-  .img-container {        /* need to understand */
+}
+
+.img-container {
+    /* need to understand */
     height: 450px;
     overflow: hidden;
     border-radius: 20px;
     border: 5px solid #eca74600;
-  }
-  
-  .img-container img {        /* need to understand */
+}
+
+.img-container img {
+    /* need to understand */
     transition: transform .5s ease;
-  }
-  
-  .img-container img:hover {      /* need to understand */
+}
+
+.img-container img:hover {
+    /* need to understand */
     transform: scale(1.5);
-  }
-  
-  .img-container:hover {    /* need to understand */
+}
+
+.img-container:hover {
+    /* need to understand */
     border: 5px solid #ECA646;
     border-radius: 20px;
-  }
-  
+}
+
+/* newsletter section styles */
+.newsletter-section {
+    width: 1230px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(236, 166, 70, 0.10);
+    margin: 0 130px 110px;
+}
+
+.newsletter-section img {
+    margin-bottom: 40px;
+}
+
+.newsletter-section .section-description {
+    text-align: center;
+    width: 60%;
+}
+
+
+.newsletter-section input[type="email"] {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 24px 28px;
+    width: 400px;
+    background-color: #FFF;
+    border: 0;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.newsletter-section input[type="email"]:focus {
+    outline: 2px solid #ECA646;
+    border: 0px;
+}
+
+
+.newsletter-section input[type="submit"] {
+    position: relative;
+    left: -5px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 0px 46.75px 46.75px 0px;
+    background-color: #ECA646;
+    border: 0;
+    padding: 24px 28px;
+}
